@@ -15,6 +15,8 @@ p{
 	color: #EBDBB2;
 }
 .header{
+	width: 100%;
+	min-width: 1200px;
 	height: 29px;
 	display: flex;
 	justify-content: center;
@@ -159,9 +161,24 @@ p{
 .projects__info__list__item a, p{
 	display: inline;
 }
+.code_exemple{
+	margin-top: 10px;
+}
+.code{
+	font-weight: 400;
+	font-size: 20px;
+}
+.code_exemple pre {
+	width: 260px;
+}
+.code {
+	font-size: 20px;
+}
 .footer{
+	margin-top: 10px;
 	display: flex;
 	justify-content: center;
+	height: 30px;
 }
 .footer_container{
 	width: 1200px;

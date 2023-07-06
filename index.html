@@ -177,6 +177,23 @@
 							</ul>
 						</div>
 					</section>
+					<section class="code_exemple">
+						<h2>Code exemple</h2>
+						<hr class="right__bar">
+						<pre>
+							<code class="code">
+import { $authHost, $host } from "./index";
+import jwt_decode from "jwt-decode";
+
+export const registration = async (email, password) =>{
+	const {data} = await $host.post("api/user/registration",
+	{email, password, role: 'USER'})
+	localStorage.setItem('token', data.token) 
+	return jwt_decode(data.token)
+}
+							</code>
+						</pre>
+					</section>
 				</div>
 			</div>
 		</div>
