@@ -1,0 +1,20 @@
+.info__main__inner{
+	opacity: 0;
+	transform: translateX(-100%);
+	animation: show 0.5s ease-in-out forwards;
+}
+@keyframes show{
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+.info__main__inner:nth-child(1) {
+	animation-delay: 0s;
+}
+.info__main__inner:nth-child(2) {
+	animation-delay: 0.2s;
+}
+.info__main__inner:nth-child(3) {
+	animation-delay: 0.3s;
+}
