@@ -30,9 +30,9 @@
 					</div>
 					<div class="info">
 						<div class="info__main">
-							<h4 class="info__title">
+							<h2 class="info__title">
 								Info
-							</h4>
+							</h2>
 							<div class="info__inner">
 								<hr class="bar">
 								<ul class="links_list">
@@ -59,9 +59,9 @@
 							</div>
 						</div>
 						<div class="info__main">
-							<h4 class="info__title">
+							<h2 class="info__title">
 								Links
-							</h4>
+							</h2>
 							<div class="info__inner">
 								<hr class="bar">
 								<ul class="links_list">
@@ -91,9 +91,9 @@
 							</div>
 						</div>
 						<div class="info__main">
-							<h4 class="info__title">
+							<h2 class="info__title">
 								Skills
-							</h4>
+							</h2>
 							<div class="info__inner">
 								<hr class="bar">
 								<ul class="links_list">
@@ -125,10 +125,10 @@
 				<div class="right">
 					<div class="right_info">
 						<div class="info_element">
-							<h4 class="name">Anton Sheinikov</h4>
+							<h2 class="name">Anton Sheinikov</h2>
 						</div>
 						<div class="info_element">
-							<h4 class="role">Student</h4>
+							<h2 class="role">Student</h2>
 						</div>
 					</div>
 					<section class="about_me">
@@ -185,7 +185,7 @@
 import { $authHost, $host } from "./index";
 import jwt_decode from "jwt-decode";
 
-export const registration = async (email, password) =>{
+export const registration = async (email, password) = {
 	const {data} = await $host.post("api/user/registration",
 	{email, password, role: 'USER'})
 	localStorage.setItem('token', data.token) 
